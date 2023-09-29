@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --spacing-containers: 1rem;
+    --spacing-lines: 0.5rem;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 4.5rem;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.info-container {
+ /*background-color: red;*/
+ margin-top: 2rem;
+}
+
+.contacts-container {
+    margin-top: var(--spacing-lines);
+}
+
+.current-title-header, 
+.education-header,
+.skills-header{
+    margin-top: var(--spacing-containers);
+}
+
+.job-container {
+    margin: var(--spacing-containers) 0;
+}
+
+.job-container p {
+    margin: var(--spacing-lines) 0;
+}
+
+.job-title {
+    font-size: 1.5rem;
+}
+
+.job-date, .job-description {
+    font-size: 1rem;
+}
