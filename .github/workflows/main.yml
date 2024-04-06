@@ -27,7 +27,7 @@ jobs:
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ env.AWS_REGION }}
       - name: Sync directory to S3
-        uses: aws-actions/s3-sync@v0.3.0
+        uses: jakejarvis/s3-sync-action@master
         with:
           source_dir: '.' # replace with your directory
           bucket: 'joao-ces-personal-website' # replace with your bucket name
