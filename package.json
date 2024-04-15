@@ -1,0 +1,26 @@
+{
+  "name": "joaoces.me",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "createDist": "mkdir dist",
+    "copyAssets": "cp index.html dist/index.html && cp -r assets dist/assets",
+    "build": "npm run clean && npm run createDist && npm run copyAssets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaoces/my-personal-website.git"
+  },
+  "keywords": [
+    "jaooces"
+  ],
+  "author": "joaoces",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joaoces/my-personal-website/issues"
+  },
+  "homepage": "https://github.com/joaoces/my-personal-website#readme"
+}
