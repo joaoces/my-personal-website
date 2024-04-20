@@ -6,7 +6,23 @@ body {
   bottom: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
+  overflow: scroll;
+}
+
+header {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+footer {
+  font-size: 12px;
+  align-self: center;
+  position: relative;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: end;
 }
 
 .section-container {
@@ -21,15 +37,13 @@ body {
 .right-section {
   height: 100vh;
   width: 50%;
-  position: relative;
 }
 
 .right-section {
   display: flex;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #0D1F2D;
+  color: #0d1f2d;
   margin-right: 24px;
 }
 
@@ -47,12 +61,23 @@ body {
 
 .contacts-icons {
   font-size: 30px;
-  color: #0D1F2D;
+  color: #0d1f2d;
 }
 
-footer {
-  font-size: 12px;
-  align-self: center;
-  position: fixed;
-  bottom: 0;
+@media only screen and (max-width: 900px) {
+  .section-container {
+    flex-direction: column;
+  }
+
+  .left-section,
+  .right-section {
+    height: 50%;
+    width: 100%;
+  }
+
+  .right-section {
+    width: calc(100% - 48px);
+    margin-right: 24px;
+    margin-left: 24px;
+  }
 }
